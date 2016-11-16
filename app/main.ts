@@ -1,5 +1,5 @@
 /**
- * 这些代码初始化了应用所在的平台
+ * 杩欎簺浠ｇ爜鍒濆鍖栦簡搴旂敤鎵�鍦ㄧ殑骞冲彴
  * **/
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';

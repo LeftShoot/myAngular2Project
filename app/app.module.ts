@@ -2,19 +2,30 @@
  * 此文件为应用的入口点
  * **/
 
-import { NgModule } from '@angular/core';  //umd打包后产生的NgModule引入
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-
-import { AppComponent } from './app.component'
+import { NgModule }       from '@angular/core';
+import { BrowserModule }  from '@angular/platform-browser';
+import { FormsModule }    from '@angular/forms';
+import { AppComponent }         from './app.component';
+import { DashboardComponent }   from './dashboard.component';
+import { HeroDetailComponent }  from './hero-detail.component';
+import { HeroesComponent }      from './heroes.component';
+import { HeroService }          from './hero.service';
+import { AppRoutingModule }     from './app-routing.module'; //路由模块
+//路由还包含路由守卫，来控制跳转权限
 
 @NgModule({
     imports: [
         BrowserModule,
-        FormsModule
+        FormsModule,
+        AppRoutingModule
     ],
-    declarations: [ AppComponent ],
+    declarations: [
+        AppComponent,
+        DashboardComponent,
+        HeroDetailComponent,
+        HeroesComponent
+    ],
+    providers: [ HeroService ],
     bootstrap: [ AppComponent ]
 })
-
 export class AppModule { } //每个 Angular 应用都至少有一个模块： 根模块 ，在这里它叫做 AppModule

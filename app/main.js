@@ -1,5 +1,5 @@
 /**
- * ��Щ������ʼ����Ӧ�����ڵ�ƽ̨
+ * 这些代码初始化了应用所在的平台
  * **/
 "use strict";
 var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
